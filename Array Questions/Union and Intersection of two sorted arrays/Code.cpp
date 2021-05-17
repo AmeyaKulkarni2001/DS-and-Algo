@@ -18,6 +18,12 @@ void arrUnion(int arr1[], int arr2[],int n1, int n2){
         arr3[i+j+1] = arr2[j];
     }
     sort(arr3,arr3+n1+n2);
+    for(int j = 0;j<n1+n2; j++){
+        if(arr3[j] == arr3[j+1]){
+            arr3[j+1] = arr3[j+2];
+        }
+        arr3[n1+n2-1] = {};
+    }
     arrDisplay(arr3,n1+n2);
 }
 int main(){
