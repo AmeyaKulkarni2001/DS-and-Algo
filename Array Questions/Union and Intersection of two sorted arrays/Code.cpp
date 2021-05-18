@@ -18,11 +18,25 @@ void arrUnion(int arr1[], int arr2[],int n1, int n2){
         arr3[i+j+1] = arr2[j];
     }
     sort(arr3,arr3+n1+n2);
-    for(int j = 0;j<n1+n2; j++){
-        if(arr3[j] == arr3[j+1]){
-            arr3[j+1] = arr3[j+2];
+    // for(int j = 0;j<n1+n2; j++){
+    //     if(arr3[j] == arr3[j+1]){
+    //         arr3[j+1] = arr3[j+2];
+    //     }
+    //     arr3[n1+n2-1] = {};
+    // }
+    // for(int j = n1+n2;j>=0; j--){
+    //     if(arr3[j-1] == arr3[j]){
+    //         arr3[j-1] = arr3[j-2];
+    //     }
+    //     arr3[n1+n2-1] = {};
+    // }
+    for(int j = 0; j<n1 + n2; j++){
+        if(arr3[j] == arr3[j+1]) {
+            for(int k=j+2; k<n1+n2; k++) {
+                arr3[k-1] = arr3[k];
+            }
         }
-        arr3[n1+n2-1] = {};
+        arr3[n1+n2] = {};
     }
     arrDisplay(arr3,n1+n2);
 }
