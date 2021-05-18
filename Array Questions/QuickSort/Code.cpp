@@ -38,7 +38,7 @@ void quickSort(int arr[], int start, int end)
 }
  
 
-void printArray(int arr[], int size)
+void arrDisplay(int arr[], int size)
 {
     int i;
     for (i = 0; i < size; i++)
@@ -53,7 +53,7 @@ int main()
     int n = sizeof(arr) / sizeof(arr[0]);
     quickSort(arr, 0, n - 1);
     cout << "Sorted array: \n";
-    printArray(arr, n);
+    arrDisplay(arr, n);
     return 0;
 }
  
