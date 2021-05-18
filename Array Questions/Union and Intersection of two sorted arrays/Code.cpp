@@ -36,7 +36,7 @@ void arrUnion(int arr1[], int arr2[],int n1, int n2){
                 arr3[k-1] = arr3[k];
             }
         }
-        arr3[n1+n2] = {};
+        arr3[n1+n2-1] = {};
     }
     arrDisplay(arr3,n1+n2);
 }
