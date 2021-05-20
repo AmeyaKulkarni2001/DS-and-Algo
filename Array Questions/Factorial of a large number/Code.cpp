@@ -13,6 +13,12 @@ int arrDisplay(int arr[],int n){
     }
 }
 
+int factorial(int arr[],int n){
+    if(arr[0] == 0){
+        cout << 1;
+    }
+}
+
 int main(){
     int arr[] = {};
     int n = 4;
