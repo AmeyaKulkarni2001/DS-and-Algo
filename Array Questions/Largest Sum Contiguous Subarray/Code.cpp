@@ -11,6 +11,9 @@ void arrConti(int arr[],int n){
                 max = curr;
             }
         }
+        if(curr>max){
+            max = curr;
+        }
     }
     cout <<max;
 }
