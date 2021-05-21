@@ -13,7 +13,7 @@ int findMin(int arr[], int low, int high)
         return arr[low];
     }
 
-	int mid = low + (low+high)/2; 
+	int mid = low + (low+high) / 2; 
 
 	if (mid < high && arr[mid + 1] < arr[mid]){
 	return arr[mid + 1];
